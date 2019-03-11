@@ -163,10 +163,14 @@
     contact me
   </h1>
   <br/>
-  <a href="mailto:bruker@post.bgu.ac.il" method="POST" enctype="text/plain">
+  <form action="mailto:bruker@post.bgu.ac.il" method="post" enctype="text/plain">
+    Name:
+    <br/>
+    <input type="text" name="name">
+    <br/>
     E-mail:
     <br/>
-    <input type="email" name="mail">
+    <input type="text" name="mail">
     <br/>
     Comment:
     <br/>
@@ -174,7 +178,8 @@
     <br/>
     <br/>
     <input type="submit" value="Send">
-  </a>
+    <input type="reset" value="Reset">
+  </form>
   <br/>
   <br/>
 </section>
