@@ -35,9 +35,43 @@ li {
 }
 
 body{
-	background: url("https://subpop-img.s3.amazonaws.com/asset/artist_images/attachments/000/004/288/max_960/2654.jpg?1389021157");
+	background: url("nirvana.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+p{
+	color: black;
+	text-shadow: white 0px 0px 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: bold;
+}
+
+.decorated{
+	overflow: hidden;
+	text-align: center;
+	color: rgb(55, 211, 231);
+	-webkit-text-stroke: 1px black;
+}
+.decorated > span{
+	position: relative;
+	display: inline-block;
+}
+.decorated > span::before, .decorated > span::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	border-bottom: 2px solid;
+	width: 591px;
+	margin: 0 20px;
+}
+.decorated > span::before{
+	right: 100%;
+}
+.decorated > span::after{
+	left: 100%;
+}
+
 
